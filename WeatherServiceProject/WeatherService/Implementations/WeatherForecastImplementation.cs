@@ -14,8 +14,6 @@ namespace WeatherService.Implementations
 
             var client = new HttpClient();
             string URL = "https://api.weatherbit.io/v2.0/current?postal_code=";
-            //I haven't been able to get this to work
-            //string URL = "https://www.weatherbit.io/api/swaggerui/weather-api-v2#!/Current32Weather32Data/get_current_postal_code_postal_code";
             string APIKey = "1824631bbfa74729aac7d2d2f1dfdd76";
             string req = URL + postal_code + "&key=" + APIKey;
 
